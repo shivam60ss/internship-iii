@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Explanation</title>
+    <link rel="stylesheet" href="selectors-explanation.css" />
+</head>
+<body>
+    <h1>CSS Selectors Explanation</h1>
+
+    <p>This is a paragraph element (element selector).</p>
+
+    <p class="highlight">This paragraph has the class "highlight" (class selector).</p>
+
+    <p id="unique">This paragraph has the id "unique" (id selector).</p>
+
+    <input type="text" placeholder="Text input (attribute selector)" />
+    <input type="password" placeholder="Password input (not styled)" />
+
+    <a href="#">Hover over this link (pseudo-class :hover)</a>
+
+    <ul>
+        <li>First list item (pseudo-class :first-child)</li>
+        <li>Second list item</li>
+    </ul>
+
+    <p>Paragraph with <span>span inside div (descendant combinator)</span></p>
+
+    <div>
+        <span>This span is inside a div (descendant combinator)</span>
+    </div>
+
+    <ul>
+        <li>List item 1 (child combinator)</li>
+        <li>List item 2</li>
+    </ul>
+
+    <h2>Heading 2</h2>
+    <p>Paragraph immediately after h2 (adjacent sibling combinator)</p>
+    <p>Another paragraph after h2 (general sibling combinator)</p>
+
+    <p>First letter of this paragraph is styled (pseudo-element ::first-letter).</p>
+</body>
+</html>

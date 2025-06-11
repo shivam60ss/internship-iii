@@ -1,0 +1,125 @@
+
+
+
+.dim{
+    /* fix size */
+    height: 300px; 
+    width: 600px;
+    background-color: aqua;
+
+}
+h1{
+    height: 200px;
+    width: 60%;
+    background-color: rgb(169, 202, 23);
+}
+
+/* //position css */
+
+
+
+#relative-container{
+    height: 300px;
+    width: 500px;
+    background-color: rgb(209, 126, 25);
+
+}
+
+#relative-container > div{
+    border: solid black 2px ;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+
+
+}
+/* relative */
+#relative-container > div:nth-child(2){
+    position:relative;
+   top: 50px; 
+    left: 50px;  /* always prefer left */
+    right: 100px;
+    background-color: aqua;
+}
+
+/* absolute */
+#absolute-container{
+    height: 300px;
+    width: 500px;
+    background-color: rgb(67, 201, 111);
+
+}
+
+#absolute-container > div{
+    border: solid black 2px ;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+
+
+}
+#absolute-container > div:nth-child(2){
+    position:absolute;
+   top: 200px; 
+    left: 50px;  /* always prefer left */
+    right: 100px;
+    background-color: rgb(235, 7, 7);
+}
+
+
+#absolute{
+    border: solid 2px rgb(44, 11, 228) ;
+    position: relative;
+}
+
+
+/* fixed
+ */
+
+ #fix-container{
+    height: 300px;
+    width: 500px;
+    background-color: rgb(211, 152, 80);
+
+}
+
+#fix-container > div{
+    border: solid black 2px ;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+
+
+}
+
+#fix-container > div:nth-child(2){
+    position:fixed;
+   top: 200px; 
+    right: 0px;
+    background-color: aqua;
+}
+
+/* sticky
+ */
+#sticky{
+    border: 2px solid black;
+}
+
+/* #sticky> p{
+    border: solid black 2px ;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+
+
+} */
+
+#sticky> p:nth-child(2){
+    position:sticky;
+   top: 10px;
+    background-color: aqua;
+}
+
+ 
+
+

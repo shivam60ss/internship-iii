@@ -1,0 +1,55 @@
+/* Element selector: selects all <p> elements */
+p {
+    color: blue; /* Text color blue */
+}
+
+/* Class selector: selects all elements with class "highlight" */
+.highlight {
+    background-color: yellow; /* Yellow background */
+}
+
+/* ID selector: selects the element with id "unique" */
+#unique {
+    font-weight: bold; /* Bold text */
+}
+
+/* Attribute selector: selects all <input> elements with type="text" */
+input[type="text"] {
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+/* Pseudo-class selector: selects all <a> elements when hovered */
+a:hover {
+    color: red; /* Red text on hover */
+}
+
+/* Pseudo-class selector: selects the first child element of its parent */
+li:first-child {
+    font-style: italic; /* Italic text */
+}
+
+/* Pseudo-element selector: selects the first letter of all <p> elements */
+p::first-letter {
+    font-size: 2em; /* Larger first letter */
+    color: green; /* Green color */
+}
+
+/* Descendant combinator: selects all <span> elements inside <div> */
+div span {
+    text-decoration: underline; /* Underlined text */
+}
+
+/* Child combinator: selects all <li> elements that are direct children of <ul> */
+ul > li {
+    margin-bottom: 0.5em; /* Space below each list item */
+}
+
+/* Adjacent sibling combinator: selects <p> elements immediately preceded by <h2> */
+h2 + p {
+    margin-top: 0; /* Remove top margin */
+}
+
+/* General sibling combinator: selects all <p> elements preceded by <h2> */
+h2 ~ p {
+    color: purple; /* Purple text */
+}

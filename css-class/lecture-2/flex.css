@@ -1,0 +1,26 @@
+#container{
+    border: 2px solid black;
+    width: 90vw;
+    height: 60vh;
+
+    /* Flex container properties */
+    display: flex;
+    flex-direction: row; /* row | row-reverse | column | column-reverse */
+    flex-wrap: nowrap; /* nowrap | wrap | wrap-reverse */
+    justify-content: flex-start; /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+    align-items: stretch; /* stretch | flex-start | flex-end | center | baseline */
+    align-content: stretch; /* stretch | flex-start | flex-end | center | space-between | space-around */
+}
+
+#container > div {
+    border: 1px solid red;
+    width: 75px;
+    height: 75px;
+
+    /* Flex item properties */
+    order: 0; /* default order */
+    flex-grow: 0; /* default no grow */
+    flex-shrink: 1; /* default shrink */
+    flex-basis: auto; /* default basis */
+    align-self: auto; /* auto | flex-start | flex-end | center | baseline | stretch */
+}
