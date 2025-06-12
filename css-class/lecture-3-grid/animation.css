@@ -1,0 +1,99 @@
+    h2 {
+    /* also include the angle and to left and to right 45deg */
+    background: linear-gradient(to right , blue , red , purple);
+    height: 50px;
+}
+
+h1 {
+    /* also include the angle and to left and to right 45deg */
+    background: linear-gradient(to right , red , #f06887 , purple);
+    height: 50px;
+    transition-property: background-position, transform, box-shadow;
+    transition-duration: 0.5s, 0.2s, 0.3s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    background-size: 200% 200%;
+    background-position: left center;
+    outline: none;
+}
+
+h1:hover {
+    background-position: right center;
+}
+
+h1:active {
+    transform: scale(0.95);
+}
+
+h1:focus {
+    box-shadow: 0 0 8px 3px rgba(240, 104, 135, 0.7);
+    outline: none;
+}
+
+
+/* transition */
+
+/* #box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red ;
+    background-color: antiquewhite;
+    
+}
+
+#box:hover{
+    transform: rotate(90deg);
+    background-color: aqua;
+    border-radius: 50%;
+    transition: 2s;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+} */
+
+
+#box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    background-color: antiquewhite;
+    transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1); /* Apply to all properties */
+}
+
+#box:hover {
+    transform: rotate(90deg);
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+
+/* keyframe */
+
+#box2{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; */
+    animation-fill-mode: forwards;
+     animation-direction: alternate;
+   
+
+}
+@keyframes move{
+    0%{
+        transform:translateX(0px) ;
+    }
+    25%{
+        transform: translatex(500px);
+    }
+    50%{
+        transform: translatey(500px) translateX(500px) rotate(360deg);
+    }75%{
+        transform: translateX(0px) translateY(500px);
+
+    }100%{
+        transform: translateY(0px) rotate(0deg);
+    }
+}

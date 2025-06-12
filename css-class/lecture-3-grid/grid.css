@@ -1,0 +1,22 @@
+
+
+#container{
+    display:grid;
+    height: 80vh;
+    width: 80vw;
+    border: 2px solid black;
+    /* grid-template-columns: 20vw 20vw 40vw;
+    grid-template-columns: 1fr 1fr 1fr; */
+     /* grid-template-columns: ; */
+    
+}
+
+
+#container > div{
+    border: 1px solid black;
+
+}
+
+#container > div:nth-child(3){
+    background-color: cadetblue;
+}
