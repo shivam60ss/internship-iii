@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+</head>
+
+<body>
+
+    <!-- flex -->
+
+     <div class="border-2 border-red-500 w-[80vw] h-[80vh] flex justify-around items-center bg-conic flex-wrap m-auto">  <!--flex-row , flex-col  -->
+        <div class="border w-12 h-12 animate-bounce">ssh</div>
+        <div class="border w-12 h-12">ssh</div>
+        <div class="border w-12 h-12 animate-bounce">ssh</div>
+        <div class="border w-12 h-12">ssh</div>
+        <div class="border w-12 h-12 animate-bounce">ssh</div>
+        <div class="border w-12 h-12">ssh</div>
+        <div class="border w-12 h-12 animate-bounce">ssh</div>
+    </div>
+
+    <!-- grid -->
+
+    <div class="border-2 border-red-500 w-[80vw] h-[90vh] grid gap-1 m-auto mt-2 p-2 grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+        <div class="border row-span-2 bg-red-200 hover:bg-green-500 hover:shadow-md animate-spin rounded-full items-center text-green-500 font-bold text-xl">o</div>
+        <div class="border bg-[url(/image.png)] bg-cover"></div>
+        <div class="border bg-[url(/image.png)] bg-cover"></div>
+        <div class="border bg-[url(/image.png)] bg-cover"></div>
+        <div class="border bg-[url(/image.png)] bg-cover"></div>
+        <div class="border bg-[url(/image.png)] bg-cover animate-bounce"></div>
+        <div class="border bg-[url(/image.png)] bg-cover"></div>
+    </div>
+
+
+     <div class="border-2 border-red-500 w-[80vw] h-[90vh] grid gap-1 m-auto mt-2 p-2 grid-cols-4 ">
+
+        <div class="border bg-red-200 hover:bg-green-500 hover:shadow-md items-center text-green-500 font-bold text-xl rounded flex items-center justify-center">1</div>
+        <div class="border bg-cover cols-span-2 row-span-2 col-span-2 rounded flex items-center justify-center">2</div>
+        <div class="border bg-cover row-span-2 rounded flex items-center justify-center">3</div>
+        <div class="border bg-cover rounded flex items-center justify-center">4</div>
+        <div class="border bg-cover col-span-4 rounded flex items-center justify-center ">5</div>
+       
+        
+    </div>
+
+
+    
+
+</body>
+
+</html>
