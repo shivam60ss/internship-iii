@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Responsive Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <nav class="bg-black flex items-center justify-between p-5 fixed top-0 w-full z-50 ">
+        <img class="w-12 h-12" src="logo.png" alt="Logo" />
+
+        <!-- Hamburger menu (mobile only) -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer" />
+        <div class="w-10 flex justify-center items-center h-10">
+            <label for="menu-toggle" class="cursor-pointer text-white sm:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </label>
+        </div>
+
+        <!-- Navigation Items -->
+        <div
+            class="hidden peer-checked:flex sm:flex gap-10 text-white  flex-col sm:flex-row absolute sm:static top-16 left-0 w-full sm:w-auto bg-black sm:transparent items-center gap-5 p-5 sm:p-0">
+            <a href="#" class="">Item 1</a>
+            <a href="#" class="">Item 2</a>
+            <a href="#" class="">Item 3</a>
+            <a href="#" class="">Item 4</a>
+            <a href="#" class="">Item 5</a>
+            
+        </div>
+    </nav>
+</body>
+
+
+
+</html>
