@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Todo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body class="">
+    <div class="bg-white p-6 rounded-lg shadow-xl w-[80vw] m-auto mt-20 ">
+        <h2 class="text-2xl font-bold mb-4 text-center text-gray-700">Add a Todo</h2>
+
+        <form action="/add-todos" method="post" class="flex flex-col space-y-4" id="todo-form">
+            <input type="text" name="task" placeholder="Enter your task..."
+                class="px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300" required />
+
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 rounded-md">
+                Add Todo
+            </button>
+            <div class="w-full flex justify-center items-center gap-10" id="btn-container">
+                <button type="button" class="border rounded-md px-5 p-2 bg-green-500 text-white"  id="all" onclick="getAllTodos()" >All</button>
+                <button type="button" class="border rounded-md p-2 px-3" id="active">Active</button>
+                <button type="button" class="border rounded-md p-2 px-3" id="completed">Completed</button>
+            </div>
+            <button class="bg-red-500 w-1/3 m-auto rounded-md p-2 hover:bg-red-600">Clear completed</button>
+        </form>
+    </div>
+    
+        <div class="bg-white p-6 rounded-lg shadow-xl w-[80vw] m-auto mt-20 " id="task-container">
+    
+        </div>
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
           throw new Error('Network response was not ok');
         }
         return response.json();
-      }) 
+      })
       .then(data => {
         const user = data.results[0];
         document.querySelector('.user-image').src = user.picture.large;
